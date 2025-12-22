@@ -1,0 +1,144 @@
+nav i {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.918); 
+    backdrop-filter: blur(12px);     
+    -webkit-backdrop-filter: blur(12px);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    z-index: 10;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+.navbar a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 24x;
+    font-weight: bold;
+}
+
+.hero {
+    height: fit-content;
+    background: url("Immagini/hero.gif") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.075);
+    color: white;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.category {
+ background: rgba(0, 0, 0, 0.171); 
+    backdrop-filter: blur(7px);     
+    -webkit-backdrop-filter: blur(7px);
+    color: rgb(255, 255, 255);
+    width: 250px;
+    
+    border: 0.5px solid white;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.category img {
+    width: 100%;
+    height: 82%;
+    border-radius: 5px;
+}
+.category a {
+    text-decoration: none;
+    color: white;
+}
+.category button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+.products {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.product {
+    background: white;
+    padding: 25px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.titolo {
+    font-size: 28px;
+    padding: 1%;
+    margin: 0;
+}

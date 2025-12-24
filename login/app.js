@@ -118,7 +118,7 @@ onAuthStateChanged(auth, (user) => {
 
   } else if (userButton) {
     userButton.innerText = "Login";
-    userButton.href = "../../login/login.html";
+    userButton.href = "./login/login.html";
     userDropdown?.classList.add("hidden");
   }
 });
@@ -143,3 +143,4 @@ function showRegister() {
 
 window.showLogin = showLogin;
 window.showRegister = showRegister;
+

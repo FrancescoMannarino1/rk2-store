@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RK2 Store</title>
+  <link rel="icon" type="image/jpg" href="Immagini/favicon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="titolo">
+    <p><strong>RK2</strong> STORE</p>
+    <a href="#"><img id="logogif" src="Immagini/icona.gif" alt="logo"></a>
+  </div>
+  <nav>
+    <a href="#">Vestiti</a>
+    <a href="#">Informazioni</a>
+    <a href="#">Supporto</a>
+    <i class="fa-solid fa-cart-shopping"></i>
+
+    <!-- USER LOGIN / DROPDOWN -->
+    <div id="userContainer" class="user-container">
+        <a id="userButton" href="login/login.html">Login</a> <!-- Default link -->
+        <div id="userDropdown" class="user-dropdown hidden">
+            <p id="usernameDisplay"></p>
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+</nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Scopri il tuo stile unico</h1>
+    <p>Trova lo stile che ti fa sentire speciale</p>
+    <div class="categories">
+      <div class="category">
+        <img src="Vestiti/Felpa grigia e nera/1.jpg" alt="giacca">
+        <h3>Giacca invernale style trap</h3>
+        <button><a href="Negozi_dei_vestiti/Felpa_grigia_e_nera/index.html">COMPRA</a></button>
+      </div>
+      <div class="category">
+        <img src="Immagini/casual.jpg" alt="casual">
+        <h3>Shop Casual Looks</h3>
+        <button>COMPRA</button>
+      </div>
+      <div class="category">
+        <img src="Immagini/night.jpg" alt="night">
+        <h3>Shop Night Out</h3>
+        <button>COMPRA</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="products">
+  <h2>Best Selling Outfit Sets</h2>
+  <div class="product-grid">
+    <div class="product">
+      <h3>Urban Vibes Set</h3>
+      <p class="price">€59.99</p>
+      <p>Jacket + Tee + Pants + Sneakers</p>
+      <button>VIEW OUTFIT</button>
+    </div>
+    <div class="product">
+      <h3>Campus Casual Set</h3>
+      <p class="price">€54.99</p>
+      <p>Hoodie + Jeans + Shoes</p>
+      <button>VIEW OUTFIT</button>
+    </div>
+    <div class="product">
+      <h3>Nightlife Chic Set</h3>
+      <p class="price">€69.99</p>
+      <p>Top + Skirt + Heels</p>
+      <button>VIEW OUTFIT</button>
+    </div>
+  </div>
+</section>
+
+<!-- AUTH MODAL -->
+<div id="authModal" class="modal hidden">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2>RK2 Login / Register</h2>
+
+    <!-- REGISTER FORM -->
+    <div id="registerForm">
+      <input type="text" id="regUsername" placeholder="Username">
+      <input type="email" id="regEmail" placeholder="Email">
+      <input type="password" id="regPassword" placeholder="Password">
+      <button id="registerBtn">Register</button>
+      <p>Already have an account? <span id="showLogin">Login</span></p>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div id="loginForm" class="hidden">
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button id="loginBtn">Login</button>
+      <p>Don't have an account? <span id="showRegister">Register</span></p>
+    </div>
+
+    <p id="authMessage"></p>
+  </div>
+</div>
+
+<script type="module" src="login/app.js"></script>
+</body>
+</html>

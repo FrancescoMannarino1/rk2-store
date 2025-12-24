@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RK2 Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LOGIN FORM -->
+    <div id="login">
+      <div class="brand">RK2</div>
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Email">
+      <input type="password" id="loginPassword" placeholder="Password">
+      <button id="loginBtn">Login</button>
+      <div class="switch" onclick="showRegister()">
+        Don’t have an account? <span>Register</span>
+      </div>
+    </div>
+
+    <!-- REGISTER FORM -->
+    <div id="register" class="hidden">
+      <div class="brand">RK2</div>
+      <h2>Register</h2>
+      <input type="text" id="regUsername" placeholder="Username">
+      <input type="email" id="regEmail" placeholder="Email">
+      <input type="password" id="regPassword" placeholder="Password">
+      <button id="registerBtn">Register</button>
+      <div class="switch" onclick="showLogin()">
+        Already have an account? <span>Login</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <script>
+    function showRegister() {
+      document.getElementById("login").classList.add("hidden");
+      document.getElementById("register").classList.remove("hidden");
+    }
+    function showLogin() {
+      document.getElementById("register").classList.add("hidden");
+      document.getElementById("login").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
